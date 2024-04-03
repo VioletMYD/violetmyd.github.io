@@ -1,12 +1,80 @@
+/* Color Palette 1 */
 #head1 {
-    font-family: cursive;
+    font-family: serif;
     text-align: center;
 }
-
 #c1 {
-    background-color: #3bff00;
-    color: white;
-    font-family: cursive;
+    background-color: #461220;
+    color: whitesmoke;
+    font-family: serif;
+    text-align: center;
+    padding: 24px;
+}
+#c2 {
+    background-color: #8C2F39;
+    color: whitesmoke;
+    font-family: serif;
+    text-align: center;
+    padding: 24px;
+}
+#c3 {
+    background-color: #B23A48;
+    color: whitesmoke;
+    font-family: serif;
+    text-align: center;
+    padding: 24px;
+}
+
+/* Color Palette 2 */
+#head2 {
+    font-family: fantasy;
+    text-align: center;
+}
+#d1 {
+    background-color: #893168;
+    color: #000000;
+    font-family: fantasy;
+    text-align: center;
+    padding: 24px;
+}
+#d2 {
+    background-color: #4A1942;
+    color: #000000;
+    font-family: fantasy;
+    text-align: center;
+    padding: 24px;
+}
+#d3 {
+    background-color: #2E1C2B;
+    color:#000000;
+    font-family: fantasy;
+    text-align: center;
+    padding: 24px;
+}
+
+/* Color Palette 3 */
+#head3 {
+    font-family: monospace;
+    text-align: center;
+}
+#e1 {
+    background-color: #97DB4F;
+    color: #000000;
+    font-family: monospace;
+    text-align: center;
+    padding: 24px;
+}
+#e2 {
+    background-color: #79C99E;
+    color: #000000;
+    font-family: monospace;
+    text-align: center;
+    padding: 24px;
+}
+#e3 {
+    background-color: #4D5359;
+    color: #000000;
+    font-family: monospace;
     text-align: center;
     padding: 24px;
 }
