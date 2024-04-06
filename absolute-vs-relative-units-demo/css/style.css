@@ -1,0 +1,40 @@
+.absolute-heading {
+    font-size: 36px;
+}
+
+.relative-heading {
+    font-size: 18px;
+}
+
+/* USE VW AND VH CAUTIOUSLY WHEN IT COMES TO FONT SIZES. */
+.relative-heading {
+    font-size: 5vw;
+}
+
+.relative-paragraph {
+    font-size: 1rem;
+}
+
+.absolute-img {
+    width: 350px;
+}
+
+.relative-img {
+    width: 100%
+}
+
+.outer-container {
+    border: 3px solid red;
+    width: 66%;
+}
+
+.inner-container {
+    border: 3px solid blue;
+}
+
+.inner-container p,
+.inner-container img {
+    width: 40%;
+    display: inline-block;
+}
+
