@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+.headings {
+    background-color: slateblue;
+    color: whitesmoke;
+    text-align: center;
+}
+
