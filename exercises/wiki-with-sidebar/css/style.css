@@ -10,31 +10,35 @@ body {
 #two-columns {
     display: flex;
 }
+/* @ Myself, Don't Accidentally Edit Above */
 
 #sidebar {
     position: relative;
     width: 250px;
+    font-weight: bold;
 }
 
-#sidebar h2 {
-    border-bottom: 2px solid #154b00;
+#sidebar h3 {
+    border-bottom: 3px solid #48b11e;
     padding-bottom: 8px;
+    text-align: center;
+    color: #db8f1d;
 }
 
 #sticky-sidebar {
     position: sticky;
     top: 0px;
     padding: 24px;
-    border-right: 2px solid #154b00;
-    background-color: #ffe658;
+    border: 3px solid #48b11e;
+    background-color: #fffd91;
 }
-
-#sidebar ul {
-    list-style-type: none;
+/* I looked up how to re-color my bullets :) */
+li::marker {
+    color: #48b11e;
 }
 
 #sidebar ul a {
-    color: #111;
+    color: #db8f1d;
     text-decoration: none;
 }
 
@@ -45,4 +49,26 @@ body {
 #main-content {
     padding: 48px;
     flex: 1;
+    background-color: #88c5fd;
+    color: #f8fff8;
+}
+
+#main-content h1 {
+    text-align: center;
+    background-color: #eeedb4;
+    color: #a56c2a;
+    padding: 5px;
+}
+
+#main-content h2 {
+    text-align: center;
+    background-color: #eeedb4;
+    color: #a56c2a;
+}
+
+#main-content h4 {
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 3px solid #eeedb4;
+    color: #a56c2a;
 }
