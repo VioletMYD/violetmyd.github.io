@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 450px 250px 1fr;
+    /* Four Columns Total, first and last 1fr meant to be Gutter Columns */
+    grid-template-areas:
+        ". content sidebar ."
+    /* The dots are a special area "name" that
+        represent an unassigned or empty cell,
+        which is perfect for the gutters we want. */
+    ;
+}
+
+#sidebar {
+    grid-area: sidebar;
+    padding: 18px;
+}
+
+#sidebar h2 {
+    background-color: #008376;
+    margin: 0px;
+    padding: 12px;
+    color: white;
+    font-size: 18px;
+}
+
+#sidebar ul {
+    background-color: #efefef;
+    border: 1px solid teal;
+    margin: 0px 0px 36px;
+    list-style-type: none;
+    padding: 0px 12px;
+}
+
+#sidebar a {
+    color: #008376;
+    text-decoration: none;
+}
+
+#sidebar li {
+    border-bottom: 1px solid #008376;
+    padding: 8px 0px;
+}
+
+#sidebar li:last-child {
+    border-bottom: 0px;
+}
+
+#main {
+    grid-area: content;
+    margin: 0px 36px;
+}
