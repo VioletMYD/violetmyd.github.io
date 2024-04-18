@@ -100,3 +100,6 @@ body h1 {
     margin-right: 20px;
     list-style-type: none;
 }
+#seller-info li {
+    padding: 8px 0px;
+}
