@@ -6,6 +6,7 @@ body {
     font-family: sans-serif;
 }
 
+/* CARD SECTION CSS */
 #card-section {
     background-color: #5b00ed;
     color: #b5fdff;
@@ -37,4 +38,16 @@ body {
 .card p {
     font-size: 24px;
     margin: 24px 0px 0px;
+}
+
+/* MEDIA & TEXT SECTION CSS */
+.media-text {
+    display: flex;
+    align-items: center;
+    margin: 48px 0px;
+}
+
+.img-container img {
+    width: 100%;
+    object-fit: cover;
 }
