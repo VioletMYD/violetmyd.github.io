@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#moss-hero {
+    background-image: url(../images/moss_hero.jpg);
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#moss-hero h1 {
+    background-color: #965000dc;
+    border: 2px solid #d18800;
+    padding: 20px;
+}
+
+.horizontal-masonry-moss-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 12px;
+    border: 10px solid #d18800;
+}
+
+.horizontal-masonry-moss-gallery img {
+    height: 250px;
+    flex: 1;
+    object-fit: cover;
+}
