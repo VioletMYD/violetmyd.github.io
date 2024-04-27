@@ -93,6 +93,16 @@ body {
     opacity: 1;
     z-index: 1;
 }
+
+/* creates a faux background-overlay so the img-overlay is more focused on when you hover */
+.gal-holder:has(img:hover) {
+    background-color: #111;
+}
+.gal-holder:has(img:hover) img {
+    opacity: 0.2s;
+    filter: blur(5px);
+}
+
 .gal-holder img:hover:nth-of-type(1) + .img-overlay {
     background: url(../images/PrintAndWebProjectFinal_GDWD103_MDancer_V8Web.jpg);
     background-position: center;
@@ -100,7 +110,6 @@ body {
     background-repeat: no-repeat;
     background-color: black;
 }
-/* change each image and nth of type number */
 .gal-holder img:hover:nth-of-type(2) + .img-overlay {
     background: url(../images/PrintAndWebProjectFinal_GDWD103_MDancer_V3Print.jpg);
     background-position: center;
@@ -156,6 +165,24 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-color: black;
+}
+
+/* 
+Tells the img-overlay to not be clickable AT ALL by default. Then, whenever 
+you hover over an img element, the adjacent img-overlay will ALLOW all 
+functionality back, which allows us to hover over the img-overlay ONLY when 
+we've hovered over an img element. This allows the blinking to stop because now 
+there is no fighting between img-overlay and the img itself for the hover state 
+*/
+.gal-holder .img-overlay {
+    pointer-events:none;
+}
+.gal-holder img:hover + .img-overlay {
+    pointer-events: all;
+}
+.img-overlay:hover {
+    z-index: 1;
+    opacity: 1;
 }
 
 .cropped-grid-gallery {
