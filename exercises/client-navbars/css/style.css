@@ -7,11 +7,98 @@ body {
 }
 
 /* Sculpter's Haven */
+#sculp-navbar {
+    background: linear-gradient(
+        to bottom,
+        #005700,
+        #643500,
+        #444444
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
 
+#sculp-navbar a {
+    text-decoration: none;
+    color: #ec8f43;
+    background-color: #026902a1;
+    padding: 12px;
+    border-radius: 12px;
+    margin-right: 24px;
+}
+#sculp-navbar a:hover {
+    text-decoration: underline;
+    color: whitesmoke;
+    background-color: #444444;
+}
 
 /* AngelEars */
 /* ensure that the cta's all caps is countered by styling to make it look all
     lowercase. maybe even just a round font */
+#ears-navbar {
+    background: linear-gradient(
+        to right, 
+        #ff9736, 
+        #ffe262
+    );
+    border-bottom: 2px solid #024b0081;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#ears-navbar a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    padding: 12px;
+    margin: 10px 20px;
+    background-color: #047e0083;
+    border-radius: 10px;
+}
+#ears-navbar a:hover {
+    text-decoration: underline;
+    font-style: italic;
+    color: #ffe262;
+    background-color: #024b0081;
+}
 
 /* Tailored Spooks */
 /* color theme thoughts: a radial gradient of black in center, jacko-orange 2nd layer, blood red 3rd layer */
+#header {
+    position: sticky;
+    top: 0px;
+}
+
+#promo {
+    background-color: #ff8800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-nav {
+    background-color: radial-gradient(
+        black,
+        #ff8800,
+        #880000
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main-nav a {
+    /* text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    margin: 10px 20px;
+    border-radius: 10px; */
+}
+#main-nav a:hover {
+    /* text-decoration: underline;
+    font-style: italic;
+    color: #ffe262;
+    background-color: #024b0081; */
+}
