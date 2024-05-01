@@ -139,7 +139,7 @@ body {
 
     #nav {
         align-items: center;
-        /* v Either of these can be used v */
+        /* v Either of these can be used to stack v */
         /* flex-wrap: wrap; */
         flex-direction: column;
     }

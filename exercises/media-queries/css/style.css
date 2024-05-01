@@ -211,3 +211,35 @@ a {
 ****************************************************************************/
 
 /* TODO: Add your media query code here */
+@media screen and (max-width: 768px) {
+    #nav {
+        display: flex;
+        flex-direction: column;
+    }
+    /* I decreased the font sizes by 20px each
+        Not comfortable with vw or vh math */
+    #hero h1 {
+        font-size: 100px;
+    }
+    #hero h3 {
+        font-size: 40px;
+    }
+
+    .three-cards {
+        display: flex;
+        flex-direction: column;
+    }
+    .three-cards a {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .two-cards {
+        display: flex;
+        flex-direction: column;
+    }
+    .two-cards a {
+        display: flex;
+        flex-direction: column;
+    }
+}
