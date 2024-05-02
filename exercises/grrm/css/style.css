@@ -458,7 +458,7 @@ body {
 
     /* ? Am I supposed to be using vh/vw ? */
     #header h1 {
-        font-size: 62px;
+        font-size: 52px;
     }
 
     #nav a {
@@ -498,7 +498,7 @@ body {
         flex-direction: column;
     }
     #header h1 {
-        font-size: 52px;
+        font-size: 42px;
     }
 
     #nav a {
