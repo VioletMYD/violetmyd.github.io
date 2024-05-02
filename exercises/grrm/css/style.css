@@ -441,10 +441,9 @@ body {
 /* TODO: Write your media queries here */
 
 /* Tablet Breakpoint */
-@media screen and (min-width: 801px) and (max-width: 1000px) {
+@media screen and (max-width: 1000px) and (min-width: 801px) {
     #grid-layout {
         display: grid;
-        /* I dont' understand grid-template-columns and areas aha doin my best */
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 
             "header  header  header"
@@ -456,20 +455,21 @@ body {
             "bottom  bottom  bottom";
     }
 
-    /* ? Am I supposed to be using vh/vw ? */
     #header h1 {
-        font-size: 52px;
+        font-size: 48px;
     }
 
-    #nav a {
+    #nav {
         flex-wrap: wrap;
-        /* ? flex width ? */
-        flex: 1;
+    } 
+    #nav a {
+        flex: 180px;
+        border-bottom: 2px solid gray;
     }
 }
 
 /* Mobile Breakpoint */
-@media screen (max-width: 800px) {
+@media screen and (max-width: 800px) {
     #grid-layout {
         display: grid;
         grid-template-columns: 1fr;
@@ -486,24 +486,26 @@ body {
             "bottom";
     }
 
-    #header #search-bar, 
-    #header #search-button {
+    #shield-image,
+    #search-bar, 
+    #search-button {
         display: none;
     }
 
     #header {
-        display: flex;
-        /* ? what's a flex width ? */
-        flex: 1;
         flex-direction: column;
+        align-items: center;
     }
     #header h1 {
         font-size: 42px;
     }
 
-    #nav a {
+    #nav {
         flex-wrap: wrap;
-        flex: .5;
+    }
+    #nav a {
+        flex: 140px;
+        border-bottom: 2px solid gray;
     }
 
     #banner-container,
