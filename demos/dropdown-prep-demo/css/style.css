@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* v Disables allowance of content stretching */
+    align-items: flex-start;
+}
+
+.card {
+    flex: 300px;
+    border: 3px solid black;
+    margin: 24px;
+    padding: 24px;
+    border-radius: 12px;
+    text-align: center;
+}
+.card a {
+    text-decoration: none;
+    color: black;
+    /* has clickable button take up entire width of card */
+    display: block;
+    border: 3px solid black;
+    padding: 12px;
+    margin-top: 36px;
+}
+
+#card1:hover {
+    background-color: #b94cb9bd;
+    box-shadow: 4px 4px 4px #860d86;
+    transform: translateY(-4px);
+}
+#card1 {
+    transition:
+        background-color .5s,
+        box-shadow .5s,
+        transform .5s;
+}
+
+#card2 a {
+    transition:
+        background-color .5s,
+        box-shadow .5s,
+        transform .5s;
+}
+#card2:hover a {
+    background-color: #ca0000cb;
+    box-shadow: 4px 4px 4px #720000;
+    transform: translateY(-4px);
+}
+
+#card3 .card-content {
+    transition: 
+        opacity .5s,
+        visibility .5s;
+}
+#card3:hover .card-content {
+    opacity: 0;
+    /* v Makes invisible content uninteractable */
+    visibility: hidden;
+}
+
+#card4 .card-content {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition:
+        opacity .5s,
+        visibility .5s,
+        transform .5s;
+}
+#card4:hover .card-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+/* DROPDOWN MENU TUTORIAL */
+/* Recommended to build a to-be-hidden thing in its Visible State first,
+    then animate it into invisibility */
+#card5 {
+    position: relative;
+}
+#card5 .card-content {
+    position: absolute;
+    left: 0px;
+    border: 3px solid black;
+    background-color: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 4px 4px 4px #00000033;
+    margin: 0px 24px;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition:
+        opacity .5s,
+        visibility .5s,
+        transform .5s;
+}
+#card5:hover .card-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+/* Card 6 is Reserved for Page 12 of Demo Cookbook since it's Advanced;
+    How to Build a Flipping Card */
