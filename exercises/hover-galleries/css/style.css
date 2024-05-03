@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+    border: 3px solid black;
+    margin: 24px;
+    padding: 24px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* Gallery 1 Theme: Now You See Me (Now You Don't) DEMO CARD 3 */
+#cards-container-1 .card-content {
+    transition: 
+        opacity .5s,
+        visibility .5s;
+}
+#cards-container-1:hover .card-content {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#cc1-card1 {
+    background: 
+        linear-gradient(red, orange);
+}
+#cc1-card2 {
+    background:
+        linear-gradient(yellow, green);
+}
+#cc1-card3 {
+    background:
+        linear-gradient(blue, indigo);
+}
+#cc1-card4 {
+    background:
+        linear-gradient(violet, pink);
+}
+
+/* Gallery 2 Theme: Onomatopoeia + Monochrome Purple DEMO CARD 1 */
+#cc2-card1:hover,
+#cc2-card2:hover,
+#cc2-card3:hover,
+#cc2-card4:hover {
+    box-shadow: 4px 4px 4px #360036b6;
+    transform: translateY(-4px);
+}
+#cc2-card1,
+#cc2-card2,
+#cc2-card3,
+#cc2-card4 {
+    transition:
+        box-shadow .5s,
+        transform .5s;
+}
+
+#cc2-card1 {
+    background-color: #ce00ce;
+}
+#cc2-card2 {
+    background-color: #a000a0;
+}
+#cc2-card3 {
+    background-color: #750075;
+}
+#cc2-card4 {
+    background-color: #550055;
+}
+
+/* Gallery 3 Theme: "You're Already Dead." "What?!" DEMO CARD 4 */
+#cc3-card1 .card-content,
+#cc3-card2 .card-content,
+#cc3-card3 .card-content,
+#cc3-card4 .card-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+#cc3-card1:hover,
+#cc3-card2:hover,
+#cc3-card3:hover,
+#cc3-card4:hover {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition:
+        opacity .5s,
+        visibility .5s,
+        transform .5s;
+}
+
+#cc3-card1 {
+    background-color: #eeeeee;
+}
+#cc3-card2 {
+    background-color: #bebebe;
+}
+#cc3-card3 {
+    background-color: #696969;
+}
+#cc3-card4 {
+    background-color: #000000;
+    color: #920000;
+}
