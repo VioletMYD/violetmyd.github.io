@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#navbar {
+    background: linear-gradient(
+        to bottom, 
+        #d68b00, 
+        #f7b500
+    );
+    border-bottom: 3px solid #634800;
+    display: flex;
+    align-items: center;
+}
+#navbar a {
+    text-decoration: none;
+    color: #634800;
+    padding: 24px;
+}
+#navbar #logo {
+    font-weight: bold;
+    margin-right: auto;
+    /* "Take all available space and put it on the right side of logo" */
+    background-color: whitesmoke;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+/* Hero */
+#adoptee-hero {
+    background-image: ;
+    background-size: cover;
+    height: 100vh;
+    background-position: bottom right;
+    display: flex;
+    align-items: center;
+}
+
+#adoptee-hero h1 {
+    margin: 0px;
+    font-size: 100px;
+}
+#adoptee-hero p {
+    margin: 10px 0px 20px;
+}
+#adoptee-hero .btn {
+    display: inline-block;
+    border: 2px solid #498300;
+    padding: 15px 55px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: #498300;
+    transition: 
+        background-color .5s,
+        color .5s
+    ;
+}
+#adoptee-hero .btn:hover {
+    background-color: #498300;
+    color: #efefef;
+}
