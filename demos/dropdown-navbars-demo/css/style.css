@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#navbar {
+    background: linear-gradient(
+        to bottom,
+        #109ce8,
+        #0e5b96
+    );
+    display: flex;
+    align-items: center;
+}
+
+#navbar a {
+    display: inline-block;
+    /* ^ will respect sizing and respect vertical sizing above & below */
+    padding: 24px;
+    text-decoration: none;
+    color: white;
+}
+#navbar #logo {
+    margin-right: auto;
+    font-size: 36px;
+    font-weight: bold;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+#navbar a:hover {
+    background: linear-gradient(
+        to top,
+        #109ce8,
+        #0e5b96
+    );
+}
+
+.dropdown-container {
+    position: relative;
+}
+.dropdown-menu {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+        opacity .5s,
+        visibility .5s;
+}
+
+.dropdown-container:last-child .dropdown-menu {
+    right: 0px;
+    /* ^ directional properties usually only used when
+         position: absolute enabled */
+}
+
+.dropdown-container:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-menu a {
+    background-color: darkslateblue;
+    width: 100%;
+    /* fixes jagged edge */
+    min-width: 200px;
+    /* keeps width for all of them the same and makes sure we
+        have enough of a clickable area */
+}
+
+#navbar .dropdown-menu a:hover {
+    background: slateblue;
+}
+
+/* BONUS */
+@media screen and (max-width: 600px) {
+    #navbar {
+        flex-direction: column;
+    }
+
+    #navbar #logo {
+        margin-right: 0px;
+    }
+    /* strip out dropdown navigation entirely 
+        for sake of cleanliness in mobile */
+    .dropdown-container .dropdown-menu {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+/* ? how do I make it so the chevron flips upon being activated ?
+    transition? */
