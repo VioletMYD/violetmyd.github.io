@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+/* ===========================NAVBAR============================ */
+/* ISSUE : 
+    I want the navbar to be skinnier and the logo to
+    overlap onto the page like in style guide.
+    Attempted using height property in #navbar #logo */
+
+#navbar {
+    background-color: #b0c63a;
+    border: 8px solid #4b2f00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    padding: 24px;
+    margin-left: 5px;
+}
+#navbar a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: #003f0cd8;
+    color: #FFCE88;
+}
+
+#navbar #feedback {
+    background-color: #4d2100;
+    border: 4px dashed #d3d3d3;
+    border-radius: 25px;
+    padding: 20px;
+    color: #d3d3d3;
+}
+#navbar #feedback:hover {
+    opacity: 85%;
+}
+
+#navbar #logo {
+    margin-left: auto;
+    /* "Take all available space and put it on the left side of logo" */
+    padding: 0px;
+}
+#navbar #logo:hover {
+    background-color: #FFCE88;
+}
+
+/* ===========================DROPDOWN============================ */
+/* ISSUE: 
+    Dropdown Menu has extra spacing above Carnivore Option */
+.dropdown-container {
+    position: relative;
+}
+.dropdown-menu {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+        opacity .5s,
+        visibility .5s;
+}
+
+.dropdown-container:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-menu a {
+    border-left: 4px solid #4d2100;;
+    border-right: 4px solid #4d2100;;
+    background-color: #b0c63a;
+    width: 100%;
+    /* fixes jagged edge */
+    min-width: 200px;
+    /* keeps width for all of them the same and makes sure we
+        have enough of a clickable area */
+}
+
+.dropdown-menu a:hover {
+    background: #003f0cd7;
+    color: #FFCE88;
+}
+
+/* ===========================HERO============================ */
+#tt-hero {
+    background-image: url(../images/TreehouseTalesRestaurant_Hero_Insp.jpg);
+    background-size: cover;
+}
+#tt-hero .tt-hero-container {
+    height: 200vh;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+#adoptee-hero h1 {
+    
+}
+#adoptee-hero p {
+   
+}
+#adoptee-hero .btn {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #4d2100;
+    border: 4px dashed #d3d3d3;
+    border-radius: 25px;
+    padding: 20px;
+    color: #d3d3d3;
+    transition: 
+        background-color .5s,
+        color .5s
+    ;
+}
+#adoptee-hero .btn:hover {
+    background-color: #490000;
+    color: #efefef;
+}
+
+/* ===========================FOOTER============================ */
+#footer {
+    background-color: #b0c63a;
+    border: 8px solid #4b2f00;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footer a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    padding: 24px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#footer a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: #4b2f00de;
+    color: #FFCE88;
+}
