@@ -46,6 +46,11 @@ body {
 #navbar #feedback:hover {
     opacity: 85%;
 }
+/* Intentionally only shows up on Menu Page */
+#navbar #cart .fa-solid {
+    margin-left: 15px;
+    font-size: 40px;
+}
 
 #navbar #logo {
     margin-left: auto;
@@ -61,7 +66,9 @@ body {
 
 /* ===========================DROPDOWN============================ */
 /* ISSUE: 
-    Dropdown Menu has extra spacing above Carnivore Option */
+    Dropdown Menu has extra spacing above Carnivore Option
+    Dropdown Menu disappears behind Hero on hover???
+*/
 .dropdown-container {
     position: relative;
 }
@@ -95,14 +102,9 @@ body {
     color: #FFCE88;
 }
 
-.dropdown-menu #pop {
-    border-bottom: 4px solid #4d2100;
-}
-
 /* ===========================HERO============================ */
-/* ISSUES:
-    I don't know why my nav disappears behind my hero when scrolled
-    My button wont move...
+/* ISSUE:
+    My hero's button wont move to center...
  */
 #tt-hero {
     background-image: url(../images/TreehouseTalesRestaurant_Hero_Insp.jpg);
@@ -148,7 +150,7 @@ body {
 /* ===========================FOOTER============================ */
 /* ISSUE:
     How do I make the copyright sit right beneath the icons
-    in the center, again...? */
+    in the center...? */
 #footer {
     background-color: #b0c63a;
     border: 8px solid #4b2f00;
@@ -181,10 +183,7 @@ body {
 
 /* ===========================MENU PAGE============================ */
 /* ISSUE:
-    ???? LITERALLY WHAT AM I DOING ???? whys it look so wack!!!
-    i'm forgetting all of the teachings lol even the cookbook
-    isn't saving me
-*/
+    Ugh buttons aren't uniform; buttons dont reach bottom */
 #centered-column {
     width: 90vw;
     max-width: 800px;
@@ -222,15 +221,21 @@ body {
     object-fit: cover;
 }
 
-/* 
-    WHERE I LEFT OFF MAY 10TH
-    I AIM TO DO MORE LIL STYLING + ADD BUTTONS TO CARDS
- */
 .foodcard h2 {
     text-align: center;
     font-size: 36px;
     margin-top: 12px;
     margin-bottom: 0px;
+}
+
+.three-more-meals h3 {
+    text-align: center;
+    background-color: #ffcd88e7;
+    color: #003F0C;
+    text-decoration: underline;
+    font-style: italic;
+    padding: 25px;
+    border-radius: 20px;
 }
 
 .foodcard p {
@@ -239,26 +244,16 @@ body {
 }
 
 .foodcard a {
-    color: black;
-    text-decoration: none;
     font-size: 20px;
-    font-weight: bold;
     display: block;
-    width: 100%;
     margin-top: 0px;
-    padding: 10px;
     text-align: center;
-    border: 3px solid lightcoral;
-    background-color: lightcoral;
-    transition:
-        background-color .5s
-        color .5s;
+    background-color: #4d2100;
+    border: 4px dashed #d3d3d3;
+    border-radius: 25px;
+    padding: 20px;
+    color: #d3d3d3;
 }
 .foodcard a:hover {
-    background-color: transparent;
-    color: lightcoral;
+    opacity: 85%;
 }
-
-
-
-
